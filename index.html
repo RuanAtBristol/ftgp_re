@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Online Auction</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Online Auction">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    </head>
+
+    <body style="overflow: visible;">
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item-left"><a href="#Online-Store">Online Auction</a></li>
+                <li class="nav-item-left"><a href="upload.html">Upload To Sell</a></li>
+                <li class="nav-item-right">
+                    <script>
+                        async function connect() {
+                            try {
+                            if (typeof window.ethereum !== "undefined") {
+                                await ethereum.request({ method: "eth_requestAccounts" });
+                            } else {
+                                throw new Error("MetaMask is not installed.");
+                            }
+                            } catch (error) {
+                            alert(error.message);
+                            }
+                        }
+                    </script>
+                    <button id="connectButton" onclick="connect()">Connect</button>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="Online-Store" class="Online-Store">
+                <div class="title">
+                    <h2, id="Featured">Featured Products</h2>
+                </div>
+        
+                <div class="content", id="products">
+                    <ul>
+                        <li>
+                            <a href="Goods1.html">
+                                <img src="images/item1.png" alt="">
+                                <h3>Product 1</h3>
+                                <p><span>Starting price 0.1ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods2.html">
+                                <img src="images/item2.png" alt="">
+                                <h3>Product 2</h3>
+                                <p><span>Starting price 0.35ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods3.html">
+                                <img src="images/item3.png" height="300px" alt="">
+                                <h3>Product 3</h3>
+                                <p><span>Starting price 0.6RTH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods4.html">
+                                <img src="images/Mango.jpg" alt="">
+                                <h3>Product 4</h3>
+                                <p><span>Starting price 0.1ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods5.html">
+                                <img src="images/Watermelon.jpg" alt="">
+                                <h3>Watermelon</h3>
+                                <p><span>Starting price 0.04ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods6.html">
+                                <img src="images/item4.jpg" alt="">
+                                <h3>Grapes</h3>
+                                <p><span>Starting price 0.2ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods7.html">
+                                <img src="images/item.jpeg" alt="">
+                                <h3>Coconut</h3>
+                                <p><span>Starting price 0.12ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods8.html">
+                                <img src="images/item5.jpg" alt="">
+                                <h3>Pear</h3>
+                                <p><span>Starting price 0.09ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods9.html">
+                                <img src="images/item7.jpg" alt="">
+                                <h3>Apple</h3>
+                                <p><span>Starting price 0.04ETH</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Goods10.html">
+                                <img src="images/item6.jpg" alt="">
+                                <h3>Pomegranate</h3>
+                                <p><span>Starting price 0.15ETH</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <section id="tokens-section" class="tokens-section">
+            <div class="tokens-header">
+                <h2>We accept various type of cryptos</h2>
+              <p>Click the icons for additional info</p>
+            </div>
+            <div class="tokens-links">
+                <a href="https://ethereum.org/en/eth/" id="token-link" class="token-details">
+                    <img src="https://cdn.cdnlogo.com/logos/e/81/ethereum-eth.svg" alt="Ethereum" class="coin-link-icon">
+                </a>
+                <a href="https://tether.to/en/transparency/" id="token-link" class="token-details">
+                    <img src="https://cryptologos.cc/logos/tether-usdt-logo.svg?v=024" alt="Tether" class="coin-link-icon">
+                </a>
+                <a href="https://www.circle.com/en/usdc" id="token-link" class="token-details">
+                    <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.svg?v=024" alt="USD Coin" class="coin-link-icon">
+                </a>
+                <a href="https://www.binance.com/en/bnb" id="token-link" class="token-details">
+                    <img src="https://cryptologos.cc/logos/bnb-bnb-logo.svg?v=024" alt="Binance Coin" class="coin-link-icon">
+                </a>
+                <a href="https://wbtc.network" id="token-link" class="token-details">
+                    <img src="https://altcoinsbox.com/wp-content/uploads/2023/01/wbtc-wrapped-bitcoin-logo.png" alt="Wrapped Bitcoin" class="coin-link-icon">
+                </a>
+                <a href="https://polygon.technology/matic-token" id="token-link" class="token-details">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-polygon-token-4086725-3379855.png?f=avif&w=256" alt="Polygon" class="coin-link-icon">
+                </a>
+                <a href="https://www.shibatoken.com" id="token-link" class="token-details">
+                    <img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.svg?v=024" alt="Shiba Inu" class="coin-link-icon">
+                </a>
+                <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/" id="token-link" class="token-details">
+                    <img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=025" alt="ERC-20 Tokens" class="coin-link-icon">
+                </a>
+            </div>
+          </section>
+          <footer>
+            <div class="footer-item-left">
+                <p>University of Bristol, Financial Technology Group Project 2023</p>
+            </div>
+          </footer>
+    <script src="js/Goods1.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    </body>
+</html>
